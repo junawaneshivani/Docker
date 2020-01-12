@@ -55,7 +55,8 @@ Docker Engine combines the namespaces, control groups, and UnionFS into a wrappe
 
 # Let us dockerize my `Linear Regression code` in my [LinearRegression](https://github.com/junawaneshivani/LinearRegression/) repo.
 
-```shivani@shivani-VirtualBox:~/Work/docker-tutorial$ sudo docker build -t linear-regression .
+```
+shivani@shivani-VirtualBox:~/Work/docker-tutorial$ sudo docker build -t linear-regression .
 Sending build context to Docker daemon  49.66kB
 Step 1/5 : FROM ubuntu:18.04
  ---> 549b9b86cb8d
@@ -77,5 +78,6 @@ shivani@shivani-VirtualBox:~/Work/docker-tutorial$ sudo docker run -it -d --name
 50d28eb15c3a83dda64f02ab4bab260695d6fc43f19ef3f621d3aca6186070ec
 shivani@shivani-VirtualBox:~/Work/docker-tutorial$ sudo docker cp data.csv linear-regression:/data.csv
 shivani@shivani-VirtualBox:~/Work/docker-tutorial$ sudo docker exec -it linear-regression python3 LinearRegression.py
-Normal Equation, theta0: 11.09, theta1: 1.27, accuracy 96.69```
+Normal Equation, theta0: 11.09, theta1: 1.27, accuracy 96.69
+```
 
